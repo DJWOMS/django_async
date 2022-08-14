@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Images</title>
+</head>
+<body>
+{% if images %}
+  <h4>Найденные изображения</h4>
+  {% for img in images %}
+    <img style="width: 200px;" src="http://127.0.0.1:8000/{{ img.url }}">
+  {% endfor %}
+{% endif %}
+</body>
+</html>
